@@ -1,0 +1,25 @@
+import argparse
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Run SNGCF.")
+    parser.add_argument('--cuda_id', type=str, default="0", help='0 for NAIS_prod, 1 for NAIS_concat')
+    parser.add_argument('--nb_heads', type=int, default=3, help='Number of head attentions.')
+    parser.add_argument('--data_path', nargs='?', default="../Data/",help='Input data path.')
+    parser.add_argument('--dataset', nargs='?', default='epinion2',help='Choose a dataset from {epinion2, twitter, weibo}')
+    parser.add_argument('--verbose', type=int, default=1,help='Interval of evaluation.')
+    parser.add_argument('--epoch', type=int, default=50,help='Number of epoch.')
+    parser.add_argument('--embed_size', type=int, default=64,help='Embedding size.')
+    parser.add_argument('--layer_size', nargs='?', default='[64]',help='Output sizes of every layer')
+    parser.add_argument('--batch_size', type=int, default=256,help='Batch size.')
+    parser.add_argument('--hidden_size', type=int, default=64, help='hidden state size : 100')
+    parser.add_argument('--regs', nargs='?', default='[1e-5]',help='Regularizations.')
+    parser.add_argument('--lr', type=float, default=0.001, help='Learning rate.')
+    parser.add_argument('--adj_type', nargs='?', default='norm',help='Specify the type of the adjacency (laplacian) matrix from {plain, norm, mean}.')
+    parser.add_argument('--alg_type', nargs='?', default='ngcf',help='Specify the type of the graph convolutional layer from {rw, rw_single, rw_fixed, rw_single_svd, rw_svd, rw_final, rw_linear}.')
+    parser.add_argument('--mess_dropout', nargs='?', default='[0.1]',help='Keep probability w.r.t. message dropout (i.e., 1-dropout_ratio) for each deep layer. 1: no dropout.')
+    parser.add_argument('--Ks', nargs='?', default='[10,20,50]',help='Output sizes of every layer')
+    parser.add_argument('--test_flag', nargs='?', default='part',help='Specify the test type from {part, full}, indicating whether the reference is done in mini-batch')
+    parser.add_argument('--nonhybrid', action='store_true', help='only use the global preference to predict')
+    parser.add_argument('--act', type=int, default=0,help='activation function')
+
+    return parser.parse_args()
