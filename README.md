@@ -1,6 +1,24 @@
 # SPEX
 
-This repository holds the codes for SPEX. Currently, it is used for review only. We will enrich the document later.
+This repository holds the code for our TOIS paper: ``SPEX: A Generic Framework for Enhancing Neural Social Recommendation`` [[Paper](https://dl.acm.org/doi/abs/10.1145/3473338)]. If you find it is useful for your work, please consider citing our paper:
+
+> Hui Li, Lianyun Li, Guipeng Xv, Chen Lin, Ke Li, and Bingchuan Jiang, "SPEX: A Generic Framework for Enhancing Neural Social Recommendation," ACM Transactions on Information Systems (TOIS), vol. 40, no. 2, pp. 37:1-37:33, 2022.
+
+	@article{LiLXLL22,
+	  author    = {Hui Li and
+	               Lianyun Li and
+	               Guipeng Xv and
+	               Chen Lin and
+	               Ke Li and
+	               Bingchuan Jiang},
+	  title     = {SPEX: A Generic Framework for Enhancing Neural Social Recommendation},
+	  journal   = {ACM Transactions on Information Systems (TOIS)},
+	  year      = {2022},
+	  volume    = {40},
+	  number    = {2},
+	  pages     = {37:1-37:33}
+	}
+
 
 ## Baseline:
 
