@@ -76,9 +76,10 @@ This repository holds the code for our TOIS paper: ``SPEX: A Generic Framework f
 
 ## Datasets:
 
-- [**Epinions**](https://www.cse.msu.edu/~tangjili/trust.html)
-- [**Weibo**](https://www.aminer.cn/data-sna#Weibo-Net-Tweet)
-- [**Twitter**](https://www.aminer.cn/data-sna#Twitter-Dynamic-Net)
+The method of processing the dataset is in the folder **Data_process**. 
+
+You can get the dataset by processing the raw data or downloading from [**google driver**](https://drive.google.com/drive/folders/1-lNgvZagoKP2PJ4XPslMIdPhNcP2Eki0?usp=sharing)
+
 
 
 ## Train:
